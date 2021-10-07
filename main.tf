@@ -12,5 +12,9 @@ resource "google_secret_manager_secret" "secret-basic" {
 
   replication {
     
+     replicas {
+        location = "us-central1"
+      }
+    
   }
 }
